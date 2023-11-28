@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   
+  app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/website/' : '/',
+    buildAssetsDir: '/static/'
+  },
+
   vite: {
     css: {
       preprocessorOptions: {
