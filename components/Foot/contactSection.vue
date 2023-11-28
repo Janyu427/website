@@ -10,7 +10,7 @@
         <div class="container">
             <div class="text_box">
                 <SectionTitle :title="title" :enTitle="enTitle"/>
-                <p class="text">無論是在設計或是生活，每一次的討論及分享總是讓我感到快樂，彼此給予的反饋也能夠創造出不一樣的思維。如果有任何問題及想法，歡迎與我聯繫 ！期待與你的每一次交流。 </p>
+                <p class="text">無論是在工作或是生活，每一次的討論及分享總是讓我感到快樂，彼此給予的反饋也能夠創造出不一樣的思維。如果有任何問題及想法，歡迎與我聯繫 ！期待與你的每一次交流。 </p>
                 <a class="btn" href="mailto:janyu427130@gmail.com" target="_blank">
                     與我聯繫
                 </a>
