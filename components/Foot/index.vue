@@ -35,7 +35,7 @@
     <contactSection />
     <footer>
         <div class="container">
-            <p class="copyright">test © Janyu <span id="thisYear"></span> All Rights Reserved</p>
+            <p class="copyright">© Janyu <span id="thisYear"></span> All Rights Reserved</p>
             <div class="social_media">
                 <a class="link" target="_blank" href="https://github.com/Janyu427" title="Github">
                     <font-awesome-icon class="icon" icon="fa-brands fa-github" />
