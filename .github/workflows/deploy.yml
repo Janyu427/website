@@ -1,0 +1,37 @@
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate static files
+        run: npm run generate
+
+      - name: Set up Git config
+        run: |
+          git config --global user.name "Janyu427"
+          git config --global user.email "janyu427130@gmail.com"
+
+      - name: Set url origin
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git    
+
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
